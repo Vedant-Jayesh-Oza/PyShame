@@ -5,9 +5,7 @@ PyShame is a multi-agent Python security analysis platform. You can upload or ed
 The app streams live agent activity (thoughts, tool calls, Semgrep findings, and handoffs) and returns a structured security report with vulnerabilities, CVSS scores, exploit scenarios, and remediation priority.
 
 ## Demo
-
-[**Watch: Current state of the project**]
-[![Watch demo](assets/demo-preview.gif)](https://github.com/user-attachments/assets/ca674fb5-6aa5-4e71-97e7-3afe498e81d8)
+[**Watch: Current state of the project**](https://youtu.be/YXY7FHB7wrM)
 
 ## Core features
 
