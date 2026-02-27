@@ -7,8 +7,7 @@ The app streams live agent activity (thoughts, tool calls, Semgrep findings, and
 ## Demo
 
 [**Watch: Current state of the project**]
-https://github.com/user-attachments/assets/ca674fb5-6aa5-4e71-97e7-3afe498e81d8
-
+[![Watch demo](assets/demo-preview.gif)](https://github.com/user-attachments/assets/ca674fb5-6aa5-4e71-97e7-3afe498e81d8)
 
 ## Core features
 
