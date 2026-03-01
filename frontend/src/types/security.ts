@@ -100,6 +100,7 @@ export interface AnalysisResultsProps {
   analysisResults: AnalysisResponse | null;
   isAnalyzing: boolean;
   error: string | null;
+  onApplyFix?: (vulnerableCode: string, fixCode: string) => void;
 }
 
 export interface PipelineProgressProps {

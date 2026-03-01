@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cybersecurity Analyst",
-  description: "Professional Python code analysis tool for cybersecurity analysis",
+  title: "PyShame - Multi-Agent Python Security Analysis",
+  description: "Find vulnerabilities before attackers do. PyShame combines Semgrep static analysis with LLM-powered code review, red-team exploits, and blue-team remediation in a 6-agent pipeline.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

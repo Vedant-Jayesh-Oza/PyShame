@@ -75,6 +75,14 @@ class AnalyzeRequest(BaseModel):
     code: str
 
 
+class FollowUpRequest(BaseModel):
+    issue: SecurityIssue
+    question: str
+
+
+class FollowUpResponse(BaseModel):
+    answer: str
+
 
 class AgentStep(BaseModel):
     agent: str

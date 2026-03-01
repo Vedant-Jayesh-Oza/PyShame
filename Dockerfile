@@ -22,6 +22,8 @@ RUN pip install uv
 COPY backend/pyproject.toml backend/uv.lock* ./
 RUN uv sync --frozen
 RUN uv tool install semgrep
+ENV PATH="/root/.local/bin:$PATH"
+
 # Copy backend source
 COPY backend/ ./
 
@@ -32,7 +34,7 @@ COPY --from=frontend-build /app/out ./static
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:8000/health || exit 1
 
-# Expose port for Cloud Run / Azure Container Instances
+# Expose port for Azure Container Apps
 EXPOSE 8000
 
 

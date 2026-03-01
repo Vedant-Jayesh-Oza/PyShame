@@ -16,7 +16,8 @@ def get_semgrep_server_params() -> Dict[str, Any]:
     semgrep_app_token = os.getenv("SEMGREP_APP_TOKEN")
 
     env = {
-        "SEMGREP_APP_TOKEN": semgrep_app_token,
+        **os.environ,
+        "SEMGREP_APP_TOKEN": semgrep_app_token or "",
         "PYTHONUNBUFFERED": "1",
         "SEMGREP_MCP_DISABLE_TRACING": "true",
     }
